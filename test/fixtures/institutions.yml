@@ -1,0 +1,31 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  status: 1
+  cooperation: 1
+  motive: MyString
+  reason: MyString
+  fantasy: MyString
+  cnpj: MyString
+  public: MyString
+  activity: MyString
+  genre: MyString
+  email: MyString
+  registration_date: 2017-09-09
+  obs: MyText
+  category: MyString
+
+two:
+  status: 1
+  cooperation: 1
+  motive: MyString
+  reason: MyString
+  fantasy: MyString
+  cnpj: MyString
+  public: MyString
+  activity: MyString
+  genre: MyString
+  email: MyString
+  registration_date: 2017-09-09
+  obs: MyText
+  category: MyString

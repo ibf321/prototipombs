@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  subject_matter: MyString
+  realisation_data: 
+  facilitator: MyString
+  technician: MyString
+  institution: one
+  institution_id: 1
+
+two:
+  subject_matter: MyString
+  realisation_data: 
+  facilitator: MyString
+  technician: MyString
+  institution: two
+  institution_id: 1

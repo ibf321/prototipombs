@@ -1,0 +1,35 @@
+"pt-BR":
+  activerecord:
+    models:
+      donor: "Doador"
+      educational : "Ações Educativas"
+      edress : "Endereço"
+    attributes:
+      donor:
+        reason : "Razão Social"
+        fantasy : "Nome Fantazia"
+        kind : "Tipo de Doador"
+        cnpj_number : "CNPJ"
+        cpf : "CPF"
+        registration_date : "Data de Cadastro"
+        obs : "Observações"
+        phone : "Telefones"
+        status : "Situação"
+        disclosure : "Autoriza Divulgação"
+        address : "Endereço"
+        additional : "Dados Adcionail"
+        responsible : "Responsável"    
+      educational:
+        subject_matter : "Assunto"
+        realisation_data : "Data da Realização"
+        facilitator : "Facilitadores"
+        technician : "Técnicos"
+        participant : "Participantes"
+        registration_date : "Data de Cadastro"
+      address:
+        city : "Cidade"
+        neighborhood : "Bairro"
+        street : "Rua"
+        number : "Numero"
+        complement : "Complemento"
+        zip_code : "CEP"

@@ -1,0 +1,29 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  country: MyString
+  city: MyString
+  state: MyString
+  neighborhood: MyString
+  street: MyString
+  number: MyString
+  complement: MyString
+  zip_code: MyString
+  donor: one
+  doner_id: 1
+  institution: one
+  institution_id: 1
+
+two:
+  country: MyString
+  city: MyString
+  state: MyString
+  neighborhood: MyString
+  street: MyString
+  number: MyString
+  complement: MyString
+  zip_code: MyString
+  donor: two
+  doner_id: 1
+  institution: two
+  institution_id: 1

@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  monday: 1
+  tuesday: 1
+  wednesday: 1
+  thursday: 1
+  friday: 1
+  sunday: 1
+  sunday: 1
+  donor: one
+  doner_id: 1
+  institution: one
+  institution_id: 1
+
+two:
+  monday: 1
+  tuesday: 1
+  wednesday: 1
+  thursday: 1
+  friday: 1
+  sunday: 1
+  sunday: 1
+  donor: two
+  doner_id: 1
+  institution: two
+  institution_id: 1

@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  kind_donor: MyString
+  donation: MyString
+  site: MyString
+  activity: MyString
+  donor: one
+  donor_id: 1
+
+two:
+  kind_donor: MyString
+  donation: MyString
+  site: MyString
+  activity: MyString
+  donor: two
+  donor_id: 1

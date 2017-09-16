@@ -1,0 +1,3 @@
+class Ageranger < ApplicationRecord
+  
+end

@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  f0004: 1
+  f0509: 1
+  f1011: 1
+  f1217: 1
+  f1819: 1
+  f2059: 1
+  f6000: 1
+  institution: one
+  institution_id: 1
+
+two:
+  f0004: 1
+  f0509: 1
+  f1011: 1
+  f1217: 1
+  f1819: 1
+  f2059: 1
+  f6000: 1
+  institution: two
+  institution_id: 1

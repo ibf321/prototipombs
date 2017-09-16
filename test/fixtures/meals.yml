@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  Breakfast: 1
+  collation: 1
+  snack: 1
+  lunch: 1
+  dinner: 1
+  supper: 1
+  6000: 1
+  institution: one
+  institution_id: 1
+  institution: one
+  institution_id: 1
+
+two:
+  Breakfast: 1
+  collation: 1
+  snack: 1
+  lunch: 1
+  dinner: 1
+  supper: 1
+  6000: 1
+  institution: two
+  institution_id: 1
+  institution: two
+  institution_id: 1
