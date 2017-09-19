@@ -15,17 +15,6 @@ ActiveRecord::Schema.define(version: 20170909231811) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "additionals", force: :cascade do |t|
-    t.string "kind_donor"
-    t.string "donation"
-    t.string "site"
-    t.string "activity"
-    t.integer "donor_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["donor_id"], name: "index_additionals_on_donor_id"
-  end
-
   create_table "addresses", force: :cascade do |t|
     t.string "country"
     t.string "city"
@@ -43,20 +32,6 @@ ActiveRecord::Schema.define(version: 20170909231811) do
     t.index ["institution_id"], name: "index_addresses_on_institution_id"
   end
 
-  create_table "agerangers", force: :cascade do |t|
-    t.integer "f0004"
-    t.integer "f0509"
-    t.integer "f1011"
-    t.integer "f1217"
-    t.integer "f1819"
-    t.integer "f2059"
-    t.integer "f6000"
-    t.integer "institution_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["institution_id"], name: "index_agerangers_on_institution_id"
-  end
-
   create_table "donors", force: :cascade do |t|
     t.string "reason"
     t.string "fantasy"
@@ -69,8 +44,11 @@ ActiveRecord::Schema.define(version: 20170909231811) do
     t.string "phone"
     t.integer "status"
     t.integer "disclosure"
+    t.string "kind_donor"
+    t.string "donation"
+    t.string "site"
+    t.string "activity"
     t.integer "address_id"
-    t.integer "additional_id"
     t.integer "responsible_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -81,7 +59,6 @@ ActiveRecord::Schema.define(version: 20170909231811) do
     t.date "realisation_data"
     t.string "facilitator"
     t.string "technician"
-    t.integer "responsible_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -105,6 +82,19 @@ ActiveRecord::Schema.define(version: 20170909231811) do
     t.integer "address_id"
     t.integer "withdrawal_id"
     t.integer "ageranger_id"
+    t.integer "f0004"
+    t.integer "f0509"
+    t.integer "f1011"
+    t.integer "f1217"
+    t.integer "f1819"
+    t.integer "f2059"
+    t.integer "f6000"
+    t.integer "monday"
+    t.integer "tuesday"
+    t.integer "wednesday"
+    t.integer "thursday"
+    t.integer "friday"
+    t.integer "sunday"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -121,8 +111,8 @@ ActiveRecord::Schema.define(version: 20170909231811) do
     t.string "institution"
     t.string "phone"
     t.string "email"
-    t.bigint "educational_id"
     t.integer "educationl_id"
+    t.bigint "educational_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["educational_id"], name: "index_participants_on_educational_id"
@@ -166,25 +156,9 @@ ActiveRecord::Schema.define(version: 20170909231811) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
-  create_table "withdrawals", force: :cascade do |t|
-    t.integer "monday"
-    t.integer "tuesday"
-    t.integer "wednesday"
-    t.integer "thursday"
-    t.integer "friday"
-    t.integer "sunday"
-    t.integer "institution_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["institution_id"], name: "index_withdrawals_on_institution_id"
-  end
-
-  add_foreign_key "additionals", "donors"
   add_foreign_key "addresses", "donors"
   add_foreign_key "addresses", "institutions"
-  add_foreign_key "agerangers", "institutions"
   add_foreign_key "participants", "educationals"
   add_foreign_key "responsibles", "donors"
   add_foreign_key "responsibles", "institutions"
-  add_foreign_key "withdrawals", "institutions"
 end

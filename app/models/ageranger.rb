@@ -1,3 +1,0 @@
-class Ageranger < ApplicationRecord
-  
-end

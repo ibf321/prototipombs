@@ -5,8 +5,9 @@ class CreateParticipants < ActiveRecord::Migration[5.1]
       t.string :institution
       t.string :phone
       t.string :email
-      t.references :educational, foreign_key: true
       t.integer :educationl_id
+      t.references :educational, foreign_key: true
+      
 
       t.timestamps
     end

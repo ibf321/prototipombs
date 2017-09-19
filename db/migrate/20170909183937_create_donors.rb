@@ -13,10 +13,13 @@ class CreateDonors < ActiveRecord::Migration[5.1]
       t.integer :status
       t.integer :disclosure
       t.text :obs
+      t.string :kind_donor
+      t.string :donation
+      t.string :site
+      t.string :activity
       t.integer :address_id
-      t.integer :additional_id
       t.integer :responsible_id
-
+      
       t.timestamps
     end
   end

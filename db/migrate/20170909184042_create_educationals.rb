@@ -5,7 +5,8 @@ class CreateEducationals < ActiveRecord::Migration[5.1]
       t.date :realisation_data
       t.string :facilitator
       t.string :technician
-      t.integer :responsible_id
+    
+
       t.timestamps
     end
   end
