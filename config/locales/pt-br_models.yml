@@ -1,11 +1,16 @@
 "pt-BR":
   activerecord:
     models:
-      donor: "Doador"
-      educational : "Ações Educativas"
-      edress : "Endereço"
+      donor: "Doadores"
+      address: "Endereços"
+      educational: "Ações Educativas"
+      instituition: "Instituições"
+      operating_uni: "Unidades Operacionais"
+      participant: "Participantes"
+      responsible: "Responsáveis"
+      user: "Usuários"
     attributes:
-      donor:
+      user:
         reason : "Razão Social"
         fantasy : "Nome Fantazia"
         kind : "Tipo de Doador"
@@ -18,18 +23,6 @@
         disclosure : "Autoriza Divulgação"
         address : "Endereço"
         additional : "Dados Adcionail"
-        responsible : "Responsável"    
-      educational:
-        subject_matter : "Assunto"
-        realisation_data : "Data da Realização"
-        facilitator : "Facilitadores"
-        technician : "Técnicos"
-        participant : "Participantes"
-        registration_date : "Data de Cadastro"
-      address:
-        city : "Cidade"
-        neighborhood : "Bairro"
-        street : "Rua"
-        number : "Numero"
-        complement : "Complemento"
-        zip_code : "CEP"
+        responsible : "Responsável"
+      donor:
+        
