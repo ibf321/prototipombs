@@ -4,6 +4,7 @@ class Donor < ApplicationRecord
   enum disclosure: [:yes, :not]
   has_one :address
   has_one :responsible
+  has_one :operating_unit
 
   # has_many :responsible
   # has_one :address

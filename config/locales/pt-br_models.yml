@@ -4,8 +4,8 @@
       donor: "Doadores"
       address: "Endereços"
       educational: "Ações Educativas"
-      instituition: "Instituições"
-      operating_uni: "Unidades Operacionais"
+      institution: "Instituições"
+      operating_unit: "Unidades Operacionais"
       participant: "Participantes"
       responsible: "Responsáveis"
       user: "Usuários"
@@ -25,4 +25,3 @@
         additional : "Dados Adcionail"
         responsible : "Responsável"
       donor:
-        

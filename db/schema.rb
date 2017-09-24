@@ -102,8 +102,16 @@ ActiveRecord::Schema.define(version: 20170909231811) do
   create_table "operating_units", force: :cascade do |t|
     t.string "name"
     t.string "uf"
+    t.integer "donor_id"
+    t.integer "institution_id"
+    t.integer "user_id"
+    t.integer "educational_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["donor_id"], name: "index_operating_units_on_donor_id"
+    t.index ["educational_id"], name: "index_operating_units_on_educational_id"
+    t.index ["institution_id"], name: "index_operating_units_on_institution_id"
+    t.index ["user_id"], name: "index_operating_units_on_user_id"
   end
 
   create_table "participants", force: :cascade do |t|
@@ -158,6 +166,10 @@ ActiveRecord::Schema.define(version: 20170909231811) do
 
   add_foreign_key "addresses", "donors"
   add_foreign_key "addresses", "institutions"
+  add_foreign_key "operating_units", "donors"
+  add_foreign_key "operating_units", "educationals"
+  add_foreign_key "operating_units", "institutions"
+  add_foreign_key "operating_units", "users"
   add_foreign_key "participants", "educationals"
   add_foreign_key "responsibles", "donors"
   add_foreign_key "responsibles", "institutions"

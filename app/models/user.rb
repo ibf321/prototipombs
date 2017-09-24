@@ -1,10 +1,10 @@
 class User < ApplicationRecord
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable
-
+  has_one :operating_unit
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
-         
+
   enum kind: [:supervision, :unit_manager, :program_manager, :technicianm, :admin]
   enum status: [:active, :inactive]
   enum unit: [:Sesc_Juazeiro, :Sesc_Crato, :Sesc_Iguatu, :Sesc_Sobral, :Sesc_Fortaleza]

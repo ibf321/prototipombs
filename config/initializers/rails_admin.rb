@@ -1,5 +1,6 @@
 RailsAdmin.config do |config|
 
+
   ### Popular gems integration
 
   ## == Devise ==
@@ -22,20 +23,26 @@ RailsAdmin.config do |config|
   ## == Gravatar integration ==
   ## To disable Gravatar integration in Navigation Bar set to false
   # config.show_gravatar = true
+  config.main_app_name = ["Sistema de Informação e Gestão", "Mesa Brasil Sesc"]
+  config.navigation_static_links = {
+    'OneBitCode' => 'http://onebitcode.com',
+    'Facebook' => 'http://facebook.com'
+  }
+
+  config.navigation_static_label = "Relatórios"
+
 
   config.actions do
-    dashboard                     # mandatory
-    index                         # mandatory
-    new
-    export
-    bulk_delete
-    show
-    edit
-    delete
-    show_in_app
-
-    ## With an audit adapter, you can add:
-    # history_index
-    # history_show
-  end
-end
+     dashboard                     # mandatory
+     index                         # mandatory
+     new
+     bulk_delete
+     show
+     edit
+     delete
+     show_in_app
+     ## With an audit adapter, you can add:
+      # history_index
+      # history_show
+   end
+ end

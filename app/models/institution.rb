@@ -4,5 +4,7 @@ class Institution < ApplicationRecord
 	enum genre: [:both, :male, :female]
 	has_many :responsible
 	has_one :address
+	has_one :operating_unit
+
 
 end
